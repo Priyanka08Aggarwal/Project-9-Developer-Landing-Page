@@ -9,7 +9,7 @@
 }
 body{
   background-color:  #f5f5f5;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 header{
@@ -382,3 +382,183 @@ color: #ffffff;
   margin-right: 15px;
 
 }
+
+
+/* media queries */
+@media only screen and (max-width :1100px){
+.blog-cards{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.download-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* margin: 100px 100px; */
+}
+.download-content{
+ text-align: center;
+}
+.download-section .download-email form input {
+  
+  padding: 20px 130px 15px 20px;
+  border-radius: 50px;
+  width: 160px;
+}
+}
+
+@media only screen and (max-width :1260px)
+{
+  .header-text h2
+  {
+    font-size: 2rem;
+  }
+  .header-image{
+    width: 500px;
+  }
+  header{
+    height: 45vh;
+  }
+}
+
+@media only screen and (max-width :1016px)
+{
+  .header-text h2
+  {
+    font-size: 1.5rem;
+  }
+  .header-image{
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width :920px)
+{
+  .footer-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -100px;
+  }
+  .companies{
+    margin-top: 50px;
+  }
+ .faq-image{
+  width: 300px;
+ }
+  .header-text h2,p
+  {
+    z-index: 1;
+    position: absolute;
+    top: 200px;
+
+  }
+  .header-image{
+    position: absolute;
+    
+    top: 140px;
+  }
+  .companies a{
+    font-size: 15px;
+  }
+  /* media query for cards 920px */
+  .cards{
+    position: relative;
+    top: 125px;
+    left: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+  }
+
+  .card{
+    flex:50%;
+    /* width: 10%; */
+    height: 250px;
+    background-color: #ffffff;
+    /* margin-right: 30px; */
+    padding: 10px;
+    border-radius: 10px;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+  }
+  
+  .card-active{
+    flex: 50%;
+    /* width: 10%; */
+    height: 250px;
+    background-color: transparent;
+    margin-right: 30px;
+    box-shadow: 0px 5px 15px #000;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .card-logo{
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .card-head-active{
+    color: #000;
+    margin-left: 20px;
+  }
+  .card-head{
+    color: #000;
+    margin-left: 20px;
+  }
+   .card-body {
+    display: none;
+  }
+
+
+  
+}
+
+@media only screen and (max-width :800px)
+{
+  .faq-image{
+    width: 200px;
+   }
+ nav{
+  overflow-x: auto;
+  margin-top: 50px;
+ }
+ .logo{
+  width: 70px;
+  margin-top: 50px;
+ }
+ .footer-logo{
+  width: 100px;
+ }
+}
+
+@media only screen and (max-width :630px)
+{
+  .header-text p {
+    display: none;
+  }
+  .faq-image{
+    /* width: 100px;
+    z-index: -1; */
+    display: none;
+   }
+  nav > svg{
+    display: none;
+  }
+  .logo{
+    display: none;
+  }
+  .companies a{
+    font-size: 13px;
+  }
+}
+
+
+
+
